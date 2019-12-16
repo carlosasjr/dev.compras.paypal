@@ -11,6 +11,13 @@ route::group(['middleware' => 'auth'], function (){
 
     route::get('minha=senha', 'UserController@password')->name('user.password');
     route::post('atualizar-senha', 'UserController@passwordUpdate')->name('update.password');
+
+
+    route::get('paypal', 'PayPalController@paypal')->name('paypal');
+    route::get('return-paypal', 'PayPalController@returnPayPal')->name('return.paypal');
+
+    route::get('meus-pedidos', 'StoreController@orders')->name('orders');
+    route::get('detalhes-pedido/{id}', 'StoreController@orderDetail')->name('order.products');
 });
 
 Auth::routes();

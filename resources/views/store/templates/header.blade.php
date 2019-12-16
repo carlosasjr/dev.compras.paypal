@@ -34,6 +34,8 @@
                         <a class="dropdown-item" href="{{ route('user.profile') }}">Perfil</a>
                         <a class="dropdown-item" href=" {{ route('user.password') }}">Alterar Senha</a>
                         <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href=" {{ route('orders') }}">Meus Pedidos</a>
+                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('user.logout') }}">Sair</a>
                     </div>
                 </li>
